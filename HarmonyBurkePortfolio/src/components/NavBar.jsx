@@ -1,3 +1,5 @@
+import Portfolio from "./Portfolio";
+
 export default function Nav() {
     const linkStyle = { border: '1px black', padding: '5px' };
   
@@ -13,13 +15,14 @@ export default function Nav() {
           }}
         >
           <div style={linkStyle}>
-            <a href="#">Home</a>fv
+            <a href="#">Home</a>
           </div>
           <div style={linkStyle}>
             <a href="#">About Me</a>
           </div>
           <div style={linkStyle}>
-            <a href="#">Portfolio</a>
+            <button 
+            onClick={Portfolio}>Portfolio</button>
           </div>
           <div style={linkStyle}>
             <a href="#">Contact</a>
