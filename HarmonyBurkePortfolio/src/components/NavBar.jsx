@@ -1,37 +1,37 @@
-import Portfolio from "./Portfolio";
+import { Link, useLocation } from 'react-router-dom';
 
-export default function Nav() {
-    const linkStyle = { border: '1px black', padding: '5px' };
-  
-    return (
-      <nav className="main-header-menu">
-        <section
-          style={{
-            display: 'flex',
-            fontFamily: 'helvetica',
-            flexDirection: 'row',
-            alignItems: 'flex-start',
-            justifyContent: 'flex-start',
-          }}
+
+function NavBar() {
+  const currentPage = useLocation().pathname;
+
+  return (
+    <ul className="nav nav-tabs">
+      <li className="nav-item">
+        <Link
+          to="/"
+          className={currentPage === '/' ? 'nav-link active' : 'nav-link'}
         >
-          <div style={linkStyle}>
-            <a href="#">Home</a>
-          </div>
-          <div style={linkStyle}>
-            <a href="#">About Me</a>
-          </div>
-          <div style={linkStyle}>
-            <button 
-            onClick={Portfolio}>Portfolio</button>
-          </div>
-          <div style={linkStyle}>
-            <a href="#">Contact</a>
-          </div>
-          <div style={linkStyle}>
-            <a href="#">Resume</a>
-          </div>
-        </section>
-      </nav>
-    );
-  }
-  
+          About
+        </Link>
+      </li>
+      <li className="nav-item">
+        <Link
+          to="/Portfolio"
+          className={currentPage === '/Portfolio' ? 'nav-link active' : 'nav-link'}
+        >
+          Projects
+        </Link>
+      </li>
+      <li className="nav-item">
+        <Link
+          to="/Contact"
+          className={currentPage === '/Contact' ? 'nav-link active' : 'nav-link'}
+        >
+          Contact Me
+        </Link>
+      </li>
+    </ul>
+  );
+}
+
+export default NavBar;

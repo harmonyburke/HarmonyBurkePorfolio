@@ -1,42 +1,17 @@
-import { useState } from 'react'
-
-import './App.css'
-import {Nav, Portfolio, About, Contact} from './components';
-
+// Bringing in the required import from 'react-router-dom'
+import { Outlet } from 'react-router-dom';
+import Nav from './components/NavBar';
 
 function App() {
-  const currentPage= useState('About')
-  
-  const renderHome= () =>{
-    if (currentPage===Portfolio){
-      return <Portfolio/>
-    }else if (currentPage===Contact){
-      return <Contact/>
-    }else {
-      return <About/>
-    }
-  }
-
-  
+ 
   return (
     <>
-      <div>
-        <Nav />
-        
-      </div>
-      
-      <div className="App">
-        <h1></h1>
-        {renderHome()}
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+      <Nav />
+      <main className="mx-3">
+        <Outlet />
+      </main>
     </>
-  )
+  );
 }
 
-export default App
+export default App;
