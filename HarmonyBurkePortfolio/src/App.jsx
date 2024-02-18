@@ -1,16 +1,19 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+
 import './App.css'
-import Nav from './components/NavBar';
-import Portfolio from './components/Portfolio';
+import {Nav, Portfolio, About, Contact} from './components';
+
 
 function App() {
-  const currentPage= useState('Portfolio')
+  const currentPage= useState('About')
   
   const renderHome= () =>{
     if (currentPage===Portfolio){
       return <Portfolio/>
+    }else if (currentPage===Contact){
+      return <Contact/>
+    }else {
+      return <About/>
     }
   }
 
