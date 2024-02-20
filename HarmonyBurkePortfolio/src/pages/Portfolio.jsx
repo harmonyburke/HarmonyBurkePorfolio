@@ -1,12 +1,12 @@
 export default function Portfolio() {
     
     return (
-        <div className="projects" >
-            <ul className="list-group" style={{display:'flex', flexFlow:'column wrap'}} >
+        <div className="projects" style={{ color:'#A1683A', margin: '0'}} >
+            <ul className="list-group" style={{display:'flex', flexDirection:'column', justifyContent: 'spaceBetween', }} >
                 <li style={{display:'flex', flexDirection:'column'}}> <img src='images\pizzzapuz.png' style={{height:'200px', width:'200px'}}></img> Pizza Puzzler: The Game <a href='https://pizza-puzzler-df030c54c16c.herokuapp.com/'>Check out the game!</a>
                 <a href='https://github.com/collinshepherd/Pizza-Puzzler'>Check out the Repository!</a></li>
 
-                <li style={{display:'flex', flexDirection:'column'}}><img src='\images\weatherapp.png' style={{height:'200px', width:'200px'}}></img> Weather App <a href='https://harmonyburke.github.io/weather-app/'>Check out the webpage here!</a> 
+                <li style={{display:'flex', flexDirection:'column', justifyContent: 'space between'}}><img src='\images\weatherapp.png' style={{height:'200px', width:'200px'}}></img> Weather App <a href='https://harmonyburke.github.io/weather-app/'>Check out the webpage here!</a> 
                 <a href='https://github.com/harmonyburke/weather-app'>Check out the Repository!</a></li>
 
                 <li style={{display:'flex', flexDirection:'column'}}><img src='/images/employee.png' style={{height:'200px', width:'200px'}}></img> Employee Tracker: MySQL<a href='https://drive.google.com/file/d/1ge4TZTvvlFZj7cUUXqIct05TLb8q9mck/view'>Check out this short video walkthrough!</a> 
