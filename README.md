@@ -3,6 +3,8 @@
 ## Description
 I created this application to serve as a professional portfolio for myself. This is a react application.
 
+![alt text](HarmonyBurkePortfolio\images\portfolio2.png)
+
 ## Table of Contents 
 
 - [Usage](#usage)
@@ -10,7 +12,7 @@ I created this application to serve as a professional portfolio for myself. This
 - [Contact](#contact)
 
 ## Usage
-To use this application, please visit the webpage at ........
+To use this application, please visit the webpage at https://harmony-burke-portfolio.netlify.app/
 Click on the links provided a the top of the page to navigate throughout the webpage. If you would like to contact me further, please fill out the contact form.
 
 
