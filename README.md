@@ -3,7 +3,7 @@
 ## Description
 I created this application to serve as a professional portfolio for myself. This is a react application.
 
-![alt text](HarmonyBurkePortfolio\images\portfolio2.png)
+![alt text](HarmonyBurkePortfolio\public\images\portfolio2.png)
 
 ## Table of Contents 
 

@@ -3,7 +3,7 @@ export default function Portfolio() {
     return (
         <div className="projects" style={{ color:'#A1683A', margin: '0'}} >
             <ul className="list-group" style={{display:'flex', flexDirection:'row', justifyContent: 'spaceBetween',flexWrap:'wrap' }} >
-                <li style={{display:'flex', flexDirection:'column', margin:'60px'}}> <img src='./images\pizzzapuz.png' style={{height:'200px', width:'200px'}}></img> Pizza Puzzler: The Game <a href='https://pizza-puzzler-df030c54c16c.herokuapp.com/'>Check out the game!</a>
+                <li style={{display:'flex', flexDirection:'column', margin:'60px'}}> <img src='images\pizzzapuz.png' style={{height:'200px', width:'200px'}}></img> Pizza Puzzler: The Game <a href='https://pizza-puzzler-df030c54c16c.herokuapp.com/'>Check out the game!</a>
                 <a href='https://github.com/collinshepherd/Pizza-Puzzler'>Check out the Repository!</a></li>
 
                 <li style={{display:'flex', flexDirection:'column', justifyContent: 'space between', margin:'60px'}}><img src='\images\weatherapp.png' style={{height:'200px', width:'200px'}}></img> Weather App <a href='https://harmonyburke.github.io/weather-app/'>Check out the webpage here!</a> 
