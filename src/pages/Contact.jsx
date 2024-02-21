@@ -1,41 +1,49 @@
 import { useState } from "react";
 
 export default function Contact() {
+  const [email, setEmail] = useState("");
+  const [name, setName] = useState("");
+  const [message, setMessage] = useState("");
 
-const [email, setEmail]=useState('');
-const [name, setName]= useState('');
-const [message, setMessage]=useState('');
+  const handleInputChange = (e) => {
+    const { target } = e;
+    const inputType = target.name;
+    const inputValue = target.value;
 
-const handleInputChange =(e) =>{
-    const {target} = e;
-    const inputType=target.name;
-    const inputValue=target.value;
-
-    if (inputType==='email'){
-        setEmail(inputValue);
-    } else if (inputType==='name'){
-        setName(inputValue);
+    if (inputType === "email") {
+      setEmail(inputValue);
+    } else if (inputType === "name") {
+      setName(inputValue);
     } else {
-        setMessage(inputValue);
+      setMessage(inputValue);
     }
-};
+  };
 
-const handleSubmit = (e) => {
+  const handleSubmit = (e) => {
     e.preventDefault();
 
     if (!email || !name || !message) {
-        alert('All fields must be completed!');
+      alert("All fields must be completed!");
 
-        return;
+      return;
     }
 
-    setEmail('');
-    setMessage('');
-    setName('');
-};
+    setEmail("");
+    setMessage("");
+    setName("");
+  };
 
-return (
-    <div className="container text-center" style={{display:'flex', justifyContent:'center', alignItems:'center', marginTop:'50px', height:'max'}}>
+  return (
+    <div
+      className="container text-center"
+      style={{
+        display: "flex",
+        justifyContent: "center",
+        alignItems: "center",
+        marginTop: "50px",
+        height: "max",
+      }}
+    >
       <form className="form" onSubmit={handleSubmit}>
         <input
           value={email}
