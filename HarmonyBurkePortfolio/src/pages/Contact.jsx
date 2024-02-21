@@ -35,7 +35,7 @@ const handleSubmit = (e) => {
 };
 
 return (
-    <div className="container text-center">
+    <div className="container text-center" style={{display:'flex', justifyContent:'center', alignItems:'center', marginTop:'50px', height:'max'}}>
       <form className="form" onSubmit={handleSubmit}>
         <input
           value={email}
